@@ -11,13 +11,13 @@ const AboutSectionTwo = () => {
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/about-image-2.svg"
+                src="/images/Logo ITIA/vision.jpg"
                 alt="about image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
-                src="/images/about/about-image-2-dark.svg"
+                src="/images/Logo ITIA/thought.jpg"
                 alt="about image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
@@ -28,30 +28,58 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                  Bug Free Code
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Nous nous engageons à fournir des solutions exemptes de bugs,
+                  garantissant ainsi une performance optimale et une fiabilité
+                  accrue de vos systèmes informatiques.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                  Premier Support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Notre équipe de support est toujours prête à vous assister,
+                  assurant une réponse rapide et des solutions efficaces à tous
+                  vos problèmes informatiques.
                 </p>
               </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
+
+              <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div className="text-center">
+                  <h2 className="text-4xl font-bold text-black dark:text-white">
+                    +12K
+                  </h2>
+                  <p className="mt-2 text-lg font-medium text-body-color">
+                    Membres Actifs
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h2 className="text-4xl font-bold text-black dark:text-white">
+                    +1.5K
+                  </h2>
+                  <p className="mt-2 text-lg font-medium text-body-color">
+                    Projets Totals
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h2 className="text-4xl font-bold text-black dark:text-white">
+                    +14
+                  </h2>
+                  <p className="mt-2 text-lg font-medium text-body-color">
+                    Récompenses Gagnées
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h2 className="text-4xl font-bold text-black dark:text-white">
+                    +50
+                  </h2>
+                  <p className="mt-2 text-lg font-medium text-body-color">
+                    Membres de l'Équipe
+                  </p>
+                </div>
               </div>
             </div>
           </div>

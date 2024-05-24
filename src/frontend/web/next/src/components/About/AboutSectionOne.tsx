@@ -23,9 +23,29 @@ const AboutSectionOne = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
+              <div
+                className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/Logo ITIA/vision.jpg"
+                  alt="about image"
+                  fill
+                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                />
+                <Image
+                  src="/images/Logo ITIA/thought.jpg"
+                  alt="about image"
+                  fill
+                  className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                />
+              </div>
+            </div>
+
+            <div className="w-full px-4 lg:w-1/2 ">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Nous fournissons les meilleurs services de solutions informatiques."
+                paragraph="Chez ITIA Solution Consulting, nous transformons les idées en réalités grâce à des solutions IT innovantes et personnalisées. Fondée pour redéfinir le secteur, notre mission est de surpasser vos attentes avec des services de pointe adaptés à vos besoins spécifiques."
                 mb="44px"
               />
 
@@ -35,34 +55,29 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Flexibilité et Adaptabilité " />
+                    <List text="Technologie de Pointe " />
+                    <List text="Équipe d'Experts " />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Support Continu" />
+                    <List text="Approche Personnalisée" />
+                    <List text="Sécurité Renforcée" />
+                  </div>
+                  <div className="mt-8 w-full">
+                    <img
+                      src="/images/Logo ITIA/sing.png"
+                      alt="Signature"
+                      className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                    />
+                    <img
+                      src="/images/Logo ITIA/signature.png"
+                      alt="Signature"
+                      className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                    />
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                />
               </div>
             </div>
           </div>

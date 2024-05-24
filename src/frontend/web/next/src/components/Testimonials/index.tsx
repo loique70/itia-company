@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Sarah Dupont",
+    designation: "Directrice Marketing",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "ITIA Solution Consulting a complètement transformé notre infrastructure IT. Leur équipe d'experts a été incroyablement professionnelle et a su répondre à nos besoins spécifiques avec des solutions innovantes. Grâce à eux, nous avons pu augmenter notre efficacité et notre sécurité. Je les recommande vivement !.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Jean-Michel Durand",
+    designation: "Chef de Projet",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Collaborer avec ITIA Solution Consulting a été un véritable plaisir. Leur flexibilité et adaptabilité nous ont permis de mener à bien des projets complexes sans aucun accroc. Leur approche personnalisée a vraiment fait la différence. Nous sommes très satisfaits de leur service continu et de leur support réactif.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Alice Martin",
+    designation: "Responsable des Opérations",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "La technologie de pointe et la sécurité renforcée offertes par ITIA Solution Consulting ont été un atout majeur pour notre entreprise. Leur équipe d'experts a dépassé nos attentes à chaque étape du projet. Leur transparence et leur collaboration efficace ont été déterminantes pour notre succès. Merci à toute l'équipe !",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -34,11 +34,11 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Nos utilisateurs témoignent"
+          paragraph="Nous sommes fiers de partager les avis de nos clients, qui témoignent de notre engagement envers la qualité et la satisfaction. Découvrez ce que nos utilisateurs ont à dire sur leur expérience avec nous."
           center
         />
 
