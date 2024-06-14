@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import HeroSlider from "./HeroSlider";
+import "./hero.css";
 
 const Hero = () => {
   return (
@@ -9,36 +9,172 @@ const Hero = () => {
         id="home"
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto  text-center">
-                {/* <span>WE ARE DEDICATED</span>
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                 Delivering IT Solutions That Enable You To Work Smarter.
-                </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  
-                </p> */}
-                <HeroSlider />
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Nos realisations
-                  </Link>
-                  <Link
-                    href="/"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Nos Services
-                  </Link>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center">
+            {/* Colonne de texte */}
+            <div className="w-full px-4 md:w-1/2">
+              <div className="mb-8 text-center md:mb-0 md:text-left">
+                <div className="content">
+                  <div className="title flex items-center dark:text-black">
+                    <div className="icon mr-2 flex items-center justify-center">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="Like">
+                          <g id="Group">
+                            <g id="Group_2">
+                              <path
+                                id="Vector"
+                                d="M20.1743 13.6211C20.4811 13.2786 20.668 12.8266 20.668 12.332C20.668 11.266 19.8004 10.3984 18.7344 10.3984H14.9815C15.3532 9.27051 15.5117 7.77391 15.5117 7.13238V6.48828C15.5117 5.06687 14.355 3.91016 12.9336 3.91016H12.2891C11.9934 3.91016 11.7356 4.11125 11.6639 4.39828L11.3128 5.80293C10.8208 7.77004 9.25891 9.94039 7.64242 10.3348C7.35926 9.61812 6.66016 9.10938 5.84375 9.10938H1.97656C1.62078 9.10938 1.33203 9.39813 1.33203 9.75391V21.3555C1.33203 21.7113 1.62078 22 1.97656 22H5.84375C6.61246 22 7.27762 21.5493 7.58914 20.8979L9.80375 21.6361C10.5278 21.8775 11.2823 22 12.0459 22H17.4453C18.5114 22 19.3789 21.1325 19.3789 20.0664C19.3789 19.815 19.3308 19.5744 19.2431 19.354C20.063 19.1301 20.668 18.3786 20.668 17.4883C20.668 16.9937 20.4811 16.5417 20.1743 16.1992C20.4811 15.8568 20.668 15.4047 20.668 14.9102C20.668 14.4156 20.4811 13.9636 20.1743 13.6211ZM6.48828 20.0664C6.48828 20.4218 6.1991 20.7109 5.84375 20.7109H2.62109V10.3984H5.84375C6.1991 10.3984 6.48828 10.6876 6.48828 11.043V20.0664ZM17.4453 14.2656H18.7344C19.0897 14.2656 19.3789 14.5548 19.3789 14.9102C19.3789 15.2655 19.0897 15.5547 18.7344 15.5547H17.4453C17.0895 15.5547 16.8008 15.8434 16.8008 16.1992C16.8008 16.555 17.0895 16.8438 17.4453 16.8438H18.7344C19.0897 16.8438 19.3789 17.1329 19.3789 17.4883C19.3789 17.8436 19.0897 18.1328 18.7344 18.1328H17.4453C17.0895 18.1328 16.8008 18.4216 16.8008 18.7773C16.8008 19.1331 17.0895 19.4219 17.4453 19.4219C17.8007 19.4219 18.0898 19.7111 18.0898 20.0664C18.0898 20.4218 17.8007 20.7109 17.4453 20.7109H12.0459C11.4211 20.7109 10.8036 20.6108 10.2111 20.4132L7.77734 19.6019V11.6265C8.7884 11.4344 9.77797 10.7942 10.6713 9.74617C11.5436 8.72266 12.2508 7.3657 12.5632 6.11574L12.7922 5.19922H12.9336C13.6443 5.19922 14.2227 5.77758 14.2227 6.48828V7.13238C14.2227 7.99777 13.952 9.65766 13.6056 10.3984H12.2891C11.9333 10.3984 11.6445 10.6872 11.6445 11.043C11.6445 11.3987 11.9333 11.6875 12.2891 11.6875H18.7344C19.0897 11.6875 19.3789 11.9767 19.3789 12.332C19.3789 12.6874 19.0897 12.9766 18.7344 12.9766H17.4453C17.0895 12.9766 16.8008 13.2653 16.8008 13.6211C16.8008 13.9769 17.0895 14.2656 17.4453 14.2656Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                          <g id="Group_3">
+                            <g id="Group_4">
+                              <path
+                                id="Vector_2"
+                                d="M4.55469 19.4219C4.91065 19.4219 5.19922 19.1333 5.19922 18.7773C5.19922 18.4214 4.91065 18.1328 4.55469 18.1328C4.19872 18.1328 3.91016 18.4214 3.91016 18.7773C3.91016 19.1333 4.19872 19.4219 4.55469 19.4219Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                          <g id="Group_5">
+                            <g id="Group_6">
+                              <path
+                                id="Vector_3"
+                                d="M13.5781 0C13.2222 0 12.9336 0.288578 12.9336 0.644531V1.97656C12.9336 2.33252 13.2222 2.62109 13.5781 2.62109C13.9341 2.62109 14.2227 2.33252 14.2227 1.97656V0.644531C14.2227 0.288578 13.9341 0 13.5781 0Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                          <g id="Group_7">
+                            <g id="Group_8">
+                              <path
+                                id="Vector_4"
+                                d="M10.8436 2.84222L9.93207 1.93073C9.6804 1.67902 9.27228 1.67902 9.02057 1.93073C8.76886 2.18244 8.76886 2.59051 9.02057 2.84222L9.93207 3.75372C10.1837 4.00539 10.5919 4.00543 10.8436 3.75372C11.0953 3.50201 11.0953 3.09393 10.8436 2.84222Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                          <g id="Group_9">
+                            <g id="Group_10">
+                              <path
+                                id="Vector_5"
+                                d="M18.1356 1.93073C17.8839 1.67902 17.4758 1.67902 17.2241 1.93073L16.3126 2.84218C16.0609 3.09389 16.0609 3.50197 16.3126 3.75368C16.5642 4.00539 16.9723 4.00543 17.2241 3.75372L18.1356 2.84222C18.3873 2.59051 18.3873 2.18244 18.1356 1.93073Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <span>Create your Dream Project with Us</span>
+                  </div>
+                  <div className="sub-title ">
+                    <h2 className="dark:text-white">
+                      Best IT<span> Solution </span> For Your Business
+                    </h2>
+                  </div>
+                  <p>
+                    Your success is our success. We prioritize understanding
+                    your unique business requirements, tailoring solutions that
+                    not only meet your needs but also exceed your expectations.
+                  </p>
+                  <div className="hero-btn">
+                    <Link className="theme-btn" href="/about">
+                      {" "}
+                      Get Started<i className="ti-arrow-right"></i>
+                    </Link>
+                  </div>
                 </div>
               </div>
-              <div></div>
+            </div>
+            
+            <div className="w-full px-4 md:w-1/2">
+              <div className="relative mx-auto max-w-md lg:max-w-lg ">
+                <Image
+                  src="/images/hero/man.png"
+                  alt="Person"
+                  width={400}
+                  height={400}
+                  className="rounded-lg object-cover drop-shadow-three dark:hidden dark:drop-shadow-none"
+                />
+                <Image
+                  src="/images/hero/home.png"
+                  alt="Person"
+                  width={500}
+                  height={500}
+                  className="rounded-lg object-cover  hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                />
+                <div className="bg-shape">
+                  <svg
+                    width="652"
+                    height="668"
+                    viewBox="0 0 652 668"
+                    fill="none"
+                  >
+                    <path d="M0 367.646C0 360.448 3.86838 353.805 10.129 350.252L622.129 2.95135C635.462 -4.6148 652 5.01565 652 20.3457V648C652 659.046 643.046 668 632 668H20C8.95432 668 0 659.046 0 648V367.646Z"></path>
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
+          
+          <section className="funfact-section mt-16">
+            <div className="container">
+              <div className="grid grid-cols-1 lg:grid-cols-4">
+                <div className="">
+                  <div className="item">
+                    <h3>
+                      <span>
+                        <span>12</span>
+                      </span>
+                      K+
+                    </h3>
+                    <h4>Project Completed</h4>
+                  </div>
+                </div>
+                <div className="col col-lg-3 col-md-6 col-12">
+                  <div className="item">
+                    <h3>
+                      <span>
+                        <span>20</span>
+                      </span>
+                      +
+                    </h3>
+                    <h4>Industry Experience</h4>
+                  </div>
+                </div>
+                <div className="col col-lg-3 col-md-6 col-12">
+                  <div className="item">
+                    <h3>
+                      <span>
+                        <span>10</span>
+                      </span>
+                      K+
+                    </h3>
+                    <h4>Happy Clients</h4>
+                  </div>
+                </div>
+                <div className="col col-lg-3 col-md-6 col-12">
+                  <div className="item">
+                    <h3>
+                      <span>
+                        <span>32</span>
+                      </span>
+                      +
+                    </h3>
+                    <h4>Awards Winner</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
