@@ -98,9 +98,9 @@ const Hero = () => {
             <div className="w-full px-4 md:w-1/2">
               <div className="relative mx-auto max-w-md lg:max-w-lg ">
                 <Image
-                  src="/images/hero/man.png"
+                  src="/images/about/test.png"
                   alt="Person"
-                  width={400}
+                  width={500}
                   height={400}
                   className="rounded-lg object-cover drop-shadow-three dark:hidden dark:drop-shadow-none"
                 />
