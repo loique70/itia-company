@@ -1,21 +1,21 @@
 import { Menu } from "@/types/menu";
 
-const menuData: Menu[] = [
+const getMenuData = (t: (key: string) => string): Menu[] => [
   {
     id: 1,
-    title: "Accueil",
+    title: t("home"),
     path: "/",
     newTab: false,
   },
   {
     id: 2,
-    title: "À propos de nous",
+    title: t("aboutUs"),
     path: "/about",
     newTab: false,
     submenu: [
       {
         id: 45,
-        title: "Service Details Page",
+        title: t("serviceDetails"),
         path: "/service-details",
         newTab: false,
       },
@@ -23,21 +23,22 @@ const menuData: Menu[] = [
   },
   {
     id: 22,
-    title: "Nos services",
+    title: t("ourServices"),
     path: "/service",
     newTab: false,
   },
   {
     id: 3,
-    title: "Nos réalisations",
+    title: t("ourAchievements"),
     path: "/contact",
     newTab: false,
   },
   {
     id: 33,
-    title: "Blog",
+    title: t("blog"),
     path: "/blog",
     newTab: false,
   },
 ];
-export default menuData;
+
+export default getMenuData;

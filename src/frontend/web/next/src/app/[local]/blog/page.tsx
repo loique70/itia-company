@@ -1,15 +1,15 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
+import getBlogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { useTranslations } from "next-intl";
 
 const Blog = () => {
+  const t = useTranslations("Blog");
+  const blogData = getBlogData(t);
+
   return (
     <>
-      <Breadcrumb
-        pageName="Nos derniers nouvelles"
-        image="/images/Logo ITIA/about.jpg"
-      />
-
+      <Breadcrumb pageName={t("blog")} image="/images/Logo ITIA/about.jpg" />
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">

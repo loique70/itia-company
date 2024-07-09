@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import "./hero.css";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations('Hero');
   return (
     <>
       <section
@@ -73,28 +75,26 @@ const Hero = () => {
                         </g>
                       </svg>
                     </div>
-                    <span>Create your Dream Project with Us</span>
+                    <span>{t("title")}</span>
                   </div>
                   <div className="sub-title ">
                     <h2 className="dark:text-white">
-                      Best IT<span> Solution </span> For Your Business
+                      {t('bestIT')}<span> {t('bestSolution')} </span> {t('bestBussiness')}
                     </h2>
                   </div>
                   <p>
-                    Your success is our success. We prioritize understanding
-                    your unique business requirements, tailoring solutions that
-                    not only meet your needs but also exceed your expectations.
+                    {t('description')}
                   </p>
                   <div className="hero-btn">
                     <Link className="theme-btn" href="/about">
                       {" "}
-                      Get Started<i className="ti-arrow-right"></i>
+                      {t('getStarted')}<i className="ti-arrow-right"></i>
                     </Link>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div className="w-full px-4 md:w-1/2">
               <div className="relative mx-auto max-w-md lg:max-w-lg ">
                 <Image
@@ -109,7 +109,7 @@ const Hero = () => {
                   alt="Person"
                   width={500}
                   height={500}
-                  className="rounded-lg object-cover  hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                  className="hidden rounded-lg  object-cover drop-shadow-three dark:block dark:drop-shadow-none"
                 />
                 <div className="bg-shape">
                   <svg
@@ -124,7 +124,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
+
           <section className="funfact-section mt-16">
             <div className="container">
               <div className="grid grid-cols-1 lg:grid-cols-4">
@@ -132,11 +132,22 @@ const Hero = () => {
                   <div className="item">
                     <h3>
                       <span>
-                        <span>12</span>
+                        <span>20</span>
                       </span>
-                      K+
+                      +
                     </h3>
-                    <h4>Project Completed</h4>
+                    <h4>{t('projectCompleted')}</h4>
+                  </div>
+                </div>
+                <div className="col col-lg-3 col-md-6 col-12">
+                  <div className="item">
+                    <h3>
+                      <span>
+                        <span>4</span>
+                      </span>
+                      +
+                    </h3>
+                    <h4>{t('industryExperience')}</h4>
                   </div>
                 </div>
                 <div className="col col-lg-3 col-md-6 col-12">
@@ -147,7 +158,7 @@ const Hero = () => {
                       </span>
                       +
                     </h3>
-                    <h4>Industry Experience</h4>
+                    <h4>{t('happyClients')}</h4>
                   </div>
                 </div>
                 <div className="col col-lg-3 col-md-6 col-12">
@@ -156,20 +167,9 @@ const Hero = () => {
                       <span>
                         <span>10</span>
                       </span>
-                      K+
-                    </h3>
-                    <h4>Happy Clients</h4>
-                  </div>
-                </div>
-                <div className="col col-lg-3 col-md-6 col-12">
-                  <div className="item">
-                    <h3>
-                      <span>
-                        <span>32</span>
-                      </span>
                       +
                     </h3>
-                    <h4>Awards Winner</h4>
+                    <h4>{t('awardsWinner')}</h4>
                   </div>
                 </div>
               </div>

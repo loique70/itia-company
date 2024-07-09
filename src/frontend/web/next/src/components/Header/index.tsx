@@ -4,9 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import getMenuData from "./menuData";
+import { useTranslations, useLocale } from "next-intl";
+import LocaleSwitcher from "./local-switcher";
 
 const Header = () => {
+  const t = useTranslations("Navigation");
+  const menuData = getMenuData(t);
+  const locale = useLocale();
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -36,7 +42,7 @@ const Header = () => {
     }
   };
 
-  const usePathName = usePathname();
+  const pathname = usePathname();
 
   return (
     <>
@@ -51,7 +57,7 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
-                href="/"
+                href={`/${locale}`}
                 className={`header-logo block w-full ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
@@ -109,9 +115,9 @@ const Header = () => {
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
-                            href={menuItem.path}
+                            href={`/${locale}${menuItem.path}`}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
+                              pathname === `/${locale}${menuItem.path}`
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
@@ -141,9 +147,9 @@ const Header = () => {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, index) => (
+                              {menuItem.submenu?.map((submenuItem, index) => (
                                 <Link
-                                  href={submenuItem.path}
+                                  href={`/${locale}${submenuItem.path}`}
                                   key={index}
                                   className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
@@ -158,12 +164,15 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="flex items-center justify-end pr-16 lg:pr-0 ">
+                <div className="mr-6">
+                  <LocaleSwitcher />
+                </div>
                 <Link
-                  href="/contact"
+                  href={`/${locale}/contact`}
                   className="ease-in-up hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Contacter nous
+                  {t("contactUs")}
                 </Link>
                 <div>
                   <ThemeToggler />

@@ -1,0 +1,37 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Navigation": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "ourServices": "Our Services",
+    "blog": "Our Blog",
+    "blog-title": "Our Latest News",
+    "ourAchievements": "Our Achievements"
+  },
+
+  "Locale": {
+    "change": "Change Language",
+    "en": "English",
+    "fr": "French"
+  },
+  "Blog": {
+    "bestUIComponents": "Best UI components for modern websites",
+    "improveDesignSkills": "9 simple ways to improve your design skills",
+    "improveCodingSpeed": "Tips to quickly improve your coding speed"
+  },
+  "Hero": {
+    "title": "Create your Dream Project with Us",
+    "description": "Your success is our success. We prioritize understanding your unique business requirements, tailoring solutions that not only meet your needs but also exceed your expectations.",
+    "bestIT": "Best IT",
+    "bestSolution":"Solution",
+    "bestBussiness":"For Your Business.",
+    "getStarted": "Get Started",
+    "happyClients": "Happy Clients",
+    "industryExperience": "Industry Experience",
+    "projectCompleted": "Projects Completed",
+    "awardsWinner": "Awards Winner"
+  }
+}

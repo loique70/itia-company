@@ -1,0 +1,36 @@
+{
+  "Index": {
+    "title": "Bonjour le monde!"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "aboutUs": "À propos de nous",
+    "contactUs": "Nous contacter",
+    "ourServices": "Nos services",
+    "blog": "Notre blog",
+    "blog-title": "Nos dernières nouvelles",
+    "ourAchievements": "Nos réalisations"
+  },
+  "Locale": {
+    "change": "Changer de langue",
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "Blog": {
+    "bestUIComponents": "Meilleurs composants UI pour sites web modernes",
+    "improveDesignSkills": "9 façons simples d'améliorer vos compétences en design",
+    "improveCodingSpeed": "Conseils pour améliorer rapidement votre vitesse de codage"
+  },
+  "Hero": {
+    "title": "Créez votre projet de rêve avec nous",
+    "description": "Votre succès est notre succès. Nous nous engageons à comprendre vos besoins commerciaux uniques et à adapter des solutions qui non seulement répondent à vos besoins, mais dépassent également vos attentes.",
+    "bestIT": "La Meilleure",
+    "bestSolution":"Solution",
+    "bestBussiness":"Informatique Pour Vos Besoins.",
+    "getStarted": "Commencer",
+    "happyClients": "Clients satisfaits",
+    "industryExperience": "Expérience industrielle",
+    "projectCompleted": "Projets terminés",
+    "awardsWinner": "Lauréats de prix"
+  }
+}
