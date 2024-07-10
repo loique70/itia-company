@@ -1,8 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Service");
+  const n = useTranslations("Newsletter");
   return (
     <>
       <footer className="relative z-10 bg-white pt-3 dark:bg-gray-dark md:pt-9 lg:pt-10">
@@ -108,7 +111,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-80 md:w-80 lg:w-80 xl:w-80">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-1 text-xl font-bold text-black dark:text-white">
-                  Nos Services
+                  {t("title")}
                 </h2>
                 <div className="mb-3 flex items-center">
                   <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary">
@@ -125,7 +128,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Services conseils,
+                    {t("consulting.title")}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -143,7 +146,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Transformation numérique,
+                    {t("digitalTransformation")}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -161,7 +164,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Analyse de posture de Cybersécurité,
+                    {t("cybersecurityAssessment")}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -179,7 +182,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Développement web,
+                    {t('webDevelopment.title')}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -197,7 +200,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Développement d'application mobiles,
+                    {t('networking')}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -215,7 +218,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Réseautique,
+                    {t('telecommunications')}
                   </Link>
                 </div>
                 <div className="mb-3 flex items-center">
@@ -233,25 +236,7 @@ const Footer = () => {
                     href="/blog"
                     className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Télécommunications,
-                  </Link>
-                </div>
-                <div className="mb-3 flex items-center">
-                  <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary">
-                    <svg
-                      width="8"
-                      height="6"
-                      viewBox="0 0 8 6"
-                      className="fill-current"
-                    >
-                      <path d="M2.90567 6.00024C2.68031 6.00024 2.48715 5.92812 2.294 5.74764L0.169254 3.43784C-0.0560926 3.18523 -0.0560926 2.78827 0.169254 2.53566C0.39461 2.28298 0.74873 2.28298 0.974086 2.53566L2.90567 4.66497L7.02642 0.189715C7.25175 -0.062913 7.60585 -0.062913 7.83118 0.189715C8.0566 0.442354 8.0566 0.839355 7.83118 1.09198L3.54957 5.78375C3.32415 5.92812 3.09882 6.00024 2.90567 6.00024Z" />
-                    </svg>
-                  </span>
-                  <Link
-                    href="/blog"
-                    className="m-0 text-sm text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                  >
-                    Projets remédiations
+                    {t('remediationProjects')}
                   </Link>
                 </div>
               </div>
@@ -353,12 +338,10 @@ const Footer = () => {
             <div className="w-full px-8 md:w-96 lg:w-96 xl:w-96">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-1 text-xl font-bold text-black dark:text-white">
-                  Newsletter
+                  {n('title')}
                 </h2>
                 <p className="text-sm text-body-color">
-                  Inscrivez-vous à notre newsletter pour rester informé des
-                  dernières tendances, des articles informatifs et des offres
-                  exclusives.
+                  {n('description')}
                 </p>
                 <br />
                 <form action="">
@@ -369,7 +352,7 @@ const Footer = () => {
                     className="border-stroke mr-1 rounded-sm border bg-[#f8f8f8] text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                   />
                   <button className="rounded-sm bg-primary px-1 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                    Envoyer
+                    {n('send')}
                   </button>
                 </form>
               </div>

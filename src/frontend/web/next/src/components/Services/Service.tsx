@@ -1,47 +1,46 @@
 import React from "react";
 import { BackgroundGradientDemo } from "../ui/Card";
+import { useTranslations, useLocale } from "next-intl";
 
 const Service = () => {
+  const locale = useLocale();
+  const t = useTranslations("Service");
+
   const cardDataArray = [
     {
       imageSrc: "/images/Logo ITIA/service/web.png",
-      altText: "web development",
-      title: "Développement web et mobile",
-      description:
-        "Nous offrons des solutions de développement web et mobile sur mesure, adaptées aux besoins de votre entreprise, utilisant les dernières technologies pour garantir performance et fiabilité...",
-      link: "/service/web-development",
+      altText: t("webDevelopment.altText"),
+      title: t("webDevelopment.title"),
+      description: t("webDevelopment.description"),
+      link: `/${locale}/service/web-development`,
     },
     {
       imageSrc: "/images/Logo ITIA/service/cyber.jpg",
-      altText: "cybersecurity",
-      title: "Cybersécurité",
-      description:
-        "Protégez vos systèmes et données contre les cybermenaces avec nos services de cybersécurité avancés. Nous offrons des évaluations de sécurité, des solutions de protection et des formations...",
-      link: "/service/cybersecurity",
+      altText: t("cybersecurity.altText"),
+      title: t("cybersecurity.title"),
+      description: t("cybersecurity.description"),
+      link: `/${locale}/service/cybersecurity`,
     },
     {
       imageSrc: "/images/Logo ITIA/service/network.jpg",
-      altText: "network and telecommunications",
-      title: "Réseaux et télécommunications",
-      description:
-        "Optimisez votre infrastructure réseau et télécommunications avec nos services spécialisés. Nous offrons des solutions de connectivité fiables et performantes pour améliorer votre communication...",
-      link: "/service/network-telecom",
+      altText: t("networkTelecom.altText"),
+      title: t("networkTelecom.title"),
+      description: t("networkTelecom.description"),
+      link: `/${locale}/service/network-telecom`,
     },
     {
       imageSrc: "/images/Logo ITIA/service/notes.3.png",
-      altText: "consulting",
-      title: "Consultations",
-      description:
-        "Obtenez des conseils d'experts pour vos projets technologiques avec nos services de consultation. Nous vous aidons à définir des stratégies efficaces et à mettre en œuvre des solutions innovantes...",
-      link: "/service/consulting",
+      altText: t("consulting.altText"),
+      title: t("consulting.title"),
+      description: t("consulting.description"),
+      link: `/${locale}/service/consulting`,
     },
     {
       imageSrc: "/images/Logo ITIA/service/analysis.png",
-      altText: "data science and AI",
-      title: "Data Science et IA",
-      description:
-        "Exploitez la puissance des données et de l'intelligence artificielle pour prendre des décisions éclairées. Nos services de Data Science et IA vous permettent d'analyser et de visualiser vos données...",
-      link: "/service/data-science",
+      altText: t("dataScience.altText"),
+      title: t("dataScience.title"),
+      description: t("dataScience.description"),
+      link: `/${locale}/service/data-science`,
     },
   ];
 

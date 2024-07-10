@@ -12,7 +12,7 @@ const getBlogData = (t: (key: string) => string): Blog[] => [
       image: "/images/blog/author-01.png",
       designation: "Graphic Designer",
     },
-    tags: ["creative"],
+    tags: [t("tags.creativity")],
     publishDate: "2025",
   },
   {
@@ -26,7 +26,7 @@ const getBlogData = (t: (key: string) => string): Blog[] => [
       image: "/images/blog/author-02.png",
       designation: "Content Writer",
     },
-    tags: ["computer"],
+    tags:[t("tags.computer")],
     publishDate: "2025",
   },
   {
@@ -40,7 +40,7 @@ const getBlogData = (t: (key: string) => string): Blog[] => [
       image: "/images/blog/author-03.png",
       designation: "Graphic Designer",
     },
-    tags: ["design"],
+    tags: [t("tags.design")],
     publishDate: "2025",
   },
 ];

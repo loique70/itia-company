@@ -17,6 +17,15 @@
     "fr": "Français"
   },
   "Blog": {
+    "blog": "Nos dernières nouvelles",
+    "by": "Par",
+    "next": "Suivant",
+    "prev": "Précedent",
+    "tags": {
+      "creativity": "Creativité",
+      "computer": "Programmation",
+      "design": "Design"
+    },
     "bestUIComponents": "Meilleurs composants UI pour sites web modernes",
     "improveDesignSkills": "9 façons simples d'améliorer vos compétences en design",
     "improveCodingSpeed": "Conseils pour améliorer rapidement votre vitesse de codage"
@@ -25,12 +34,51 @@
     "title": "Créez votre projet de rêve avec nous",
     "description": "Votre succès est notre succès. Nous nous engageons à comprendre vos besoins commerciaux uniques et à adapter des solutions qui non seulement répondent à vos besoins, mais dépassent également vos attentes.",
     "bestIT": "La Meilleure",
-    "bestSolution":"Solution",
-    "bestBussiness":"Informatique Pour Vos Besoins.",
+    "bestSolution": "Solution",
+    "bestBussiness": "Informatique Pour Vos Besoins.",
     "getStarted": "Commencer",
     "happyClients": "Clients satisfaits",
     "industryExperience": "Expérience industrielle",
     "projectCompleted": "Projets terminés",
     "awardsWinner": "Lauréats de prix"
+  },
+  "Service": {
+    "webDevelopment": {
+      "title": "Développement d'application mobiles et web",
+      "description": "Nous offrons des solutions de développement web et mobile sur mesure, adaptées aux besoins de votre entreprise, utilisant les dernières technologies pour garantir performance et fiabilité...",
+      "altText": "développement web"
+    },
+    "cybersecurity": {
+      "title": "Cybersécurité",
+      "description": "Protégez vos systèmes et données contre les cybermenaces avec nos services de cybersécurité avancés. Nous offrons des évaluations de sécurité, des solutions de protection et des formations...",
+      "altText": "cybersécurité"
+    },
+    "networkTelecom": {
+      "title": "Réseaux et télécommunications",
+      "description": "Optimisez votre infrastructure réseau et télécommunications avec nos services spécialisés. Nous offrons des solutions de connectivité fiables et performantes pour améliorer votre communication...",
+      "altText": "réseaux et télécommunications"
+    },
+    "consulting": {
+      "title": "Services conseils",
+      "description": "Obtenez des conseils d'experts pour vos projets technologiques avec nos services de consultation. Nous vous aidons à définir des stratégies efficaces et à mettre en œuvre des solutions innovantes...",
+      "altText": "consultations"
+    },
+    "dataScience": {
+      "title": "Data Science et IA",
+      "description": "Exploitez la puissance des données et de l'intelligence artificielle pour prendre des décisions éclairées. Nos services de Data Science et IA vous permettent d'analyser et de visualiser vos données...",
+      "altText": "data science et IA"
+    },
+    "button": "En savoir plus",
+    "title": "Nos Services",
+    "digitalTransformation": "Transformation numérique",
+    "cybersecurityAssessment": "Analyse de posture de Cybersécurité",
+    "networking": "Réseautique",
+    "telecommunications": "Télécommunications",
+    "remediationProjects": "Projets de remédiation"
+  },
+  "Newsletter": {
+    "title": "Newsletter",
+    "description": "Inscrivez-vous à notre newsletter pour rester informé des dernières tendances, des articles informatifs et des offres exclusives.",
+    "send":"Envoyer"
   }
 }

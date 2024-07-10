@@ -3,6 +3,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BackgroundGradient } from "./backgroung-gradient";
+import { useTranslations, useLocale } from "next-intl";
+
+
 
 export function BackgroundGradientDemo({
   imageSrc,
@@ -11,6 +14,7 @@ export function BackgroundGradientDemo({
   description,
   link,
 }) {
+  const t = useTranslations('Service')
   return (
     <div className="relative">
       <BackgroundGradient className="flex flex-col items-center rounded-[22px] bg-white p-4 dark:bg-zinc-900 sm:p-10">
@@ -33,7 +37,7 @@ export function BackgroundGradientDemo({
           className="mt-4 flex items-center space-x-1 rounded-full py-1 text-xs font-bold text-white "
         >
           <span className="rounded-full bg-zinc-700 px-2 py-1 text-[0.6rem] text-white">
-            En savoir plus
+          {t('button')}
           </span>
         </Link>
       </BackgroundGradient>

@@ -18,6 +18,15 @@
     "fr": "French"
   },
   "Blog": {
+    "blog": "Our lastest new",
+    "by": "By",
+    "next": "Next",
+    "prev": "Prev",
+    "tags": {
+      "creativity": "creative",
+      "computer": "Computer",
+      "design": "Design"
+    },
     "bestUIComponents": "Best UI components for modern websites",
     "improveDesignSkills": "9 simple ways to improve your design skills",
     "improveCodingSpeed": "Tips to quickly improve your coding speed"
@@ -26,12 +35,51 @@
     "title": "Create your Dream Project with Us",
     "description": "Your success is our success. We prioritize understanding your unique business requirements, tailoring solutions that not only meet your needs but also exceed your expectations.",
     "bestIT": "Best IT",
-    "bestSolution":"Solution",
-    "bestBussiness":"For Your Business.",
+    "bestSolution": "Solution",
+    "bestBussiness": "For Your Business.",
     "getStarted": "Get Started",
     "happyClients": "Happy Clients",
     "industryExperience": "Industry Experience",
     "projectCompleted": "Projects Completed",
     "awardsWinner": "Awards Winner"
+  },
+  "Service": {
+    "webDevelopment": {
+      "title": "Web and Mobile App Development",
+      "description": "We offer custom web and mobile development solutions tailored to your business needs, using the latest technologies to ensure performance and reliability...",
+      "altText": "web development"
+    },
+    "cybersecurity": {
+      "title": "Cybersecurity",
+      "description": "Protect your systems and data against cyber threats with our advanced cybersecurity services. We offer security assessments, protection solutions, and training...",
+      "altText": "cybersecurity"
+    },
+    "networkTelecom": {
+      "title": "Network and Telecommunications",
+      "description": "Optimize your network and telecommunications infrastructure with our specialized services. We offer reliable and high-performance connectivity solutions to enhance your communication...",
+      "altText": "network and telecommunications"
+    },
+    "consulting": {
+      "title": "Consulting Services",
+      "description": "Get expert advice for your tech projects with our consulting services. We help you define effective strategies and implement innovative solutions...",
+      "altText": "consulting"
+    },
+    "dataScience": {
+      "title": "Data Science and AI",
+      "description": "Harness the power of data and artificial intelligence to make informed decisions. Our Data Science and AI services enable you to analyze and visualize your data...",
+      "altText": "data science and AI"
+    },
+    "button": "Learn more",
+    "title": "Our Services",
+    "digitalTransformation": "Digital Transformation",
+    "cybersecurityAssessment": "Cybersecurity Assessment",
+    "networking": "Networking",
+    "telecommunications": "Telecommunications",
+    "remediationProjects": "Remediation Projects"
+  },
+  "Newsletter": {
+    "title": "Newsletter",
+    "description": "Subscribe to our newsletter to stay updated on the latest trends, informative articles, and exclusive offers.",
+    "send": "Send"
   }
 }
