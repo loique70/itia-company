@@ -9,7 +9,7 @@ const AboutPage = () => {
   const t = useTranslations("Navigation");
   return (
     <>
-      <Breadcrumb pageName={t("about")} image="/images/Logo ITIA/about.jpg" />
+      <Breadcrumb pageName={t("aboutUs")} image="/images/Logo ITIA/about.jpg" />
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />

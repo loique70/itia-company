@@ -6,10 +6,10 @@
     "home": "Home",
     "aboutUs": "About Us",
     "contactUs": "Contact Us",
-    "ourServices": "Our Services",
-    "blog": "Our Blog",
+    "ourServices": "Services",
+    "blog": "Blog",
     "blog-title": "Our Latest News",
-    "ourAchievements": "Our Achievements"
+    "ourAchievements": "Achievements"
   },
 
   "Locale": {
@@ -41,7 +41,9 @@
     "happyClients": "Happy Clients",
     "industryExperience": "Industry Experience",
     "projectCompleted": "Projects Completed",
-    "awardsWinner": "Awards Winner"
+    "awardsWinner": "Awards Winner",
+    "actifMember":"Actifs Members",
+    "teamMember":"Team Members"
   },
   "Service": {
     "webDevelopment": {
@@ -81,5 +83,57 @@
     "title": "Newsletter",
     "description": "Subscribe to our newsletter to stay updated on the latest trends, informative articles, and exclusive offers.",
     "send": "Send"
+  },
+  "AboutUs": {
+    "title": "Your Partner in Innovative and Personalized IT Solutions",
+    "description": "At ITIA Solution Consulting, we turn your ideas into realities with custom IT solutions. Founded to redefine the industry, our mission is to exceed your expectations with cutting-edge services tailored to your specific needs. Our team of dedicated experts uses the latest technologies to deliver exceptional results, ensuring the growth and success of your business in an ever-evolving digital environment.",
+    "bugFreeCode": {
+      "title": "Bug-Free Code",
+      "description": "We guarantee impeccable, bug-free solutions to ensure maximum performance and unparalleled reliability for your IT systems."
+    },
+    "premierSupport": {
+      "title": "Premier Support",
+      "description": "Our support team, always available, offers quick assistance and effective solutions to all your IT needs, ensuring total peace of mind."
+    },
+    "flexibilityAdaptability": {
+      "title": "Flexibility and Adaptability",
+      "description": "We quickly adapt to changes and specific project requirements to provide flexible and tailored solutions."
+    },
+    "cuttingEdgeTechnology": {
+      "title": "Cutting-Edge Technology",
+      "description": "We utilize the most advanced technologies to ensure our solutions are both innovative and effective."
+    },
+    "expertTeam": {
+      "title": "Expert Team",
+      "description": "Our team consists of experienced and qualified professionals dedicated to providing high-quality solutions."
+    },
+    "continuousSupport": {
+      "title": "Continuous Support",
+      "description": "We offer continuous support to ensure your systems run smoothly at all times."
+    },
+    "personalizedApproach": {
+      "title": "Personalized Approach",
+      "description": "We believe in a personalized approach, working closely with you to understand and meet your specific needs."
+    },
+    "enhancedSecurity": {
+      "title": "Enhanced Security",
+      "description": "Security is our priority. We implement advanced security measures to protect your data and systems."
+    }
+  },
+  "Testimonials": {
+    "title": "The Voice of Our Satisfied Clients",
+    "description": "Discover the testimonials of our satisfied clients. Their experience with ITIA Solution Consulting reflects our commitment to providing quality solutions tailored to their specific needs. Be inspired by their success and join us for a successful IT transformation.",
+    "test1": {
+      "designation": "Marketing Director",
+      "content": "ITIA Solution Consulting completely transformed our IT infrastructure. Their team of experts was incredibly professional and addressed our specific needs with innovative solutions. Thanks to them, we have increased our efficiency and security. I highly recommend them!"
+    },
+    "test2": {
+      "designation": "Project Manager",
+      "content": "Collaborating with ITIA Solution Consulting was a real pleasure. Their flexibility and adaptability allowed us to complete complex projects without any hiccups. Their personalized approach made a real difference. We are very satisfied with their continuous service and responsive support."
+    },
+    "test3": {
+      "designation": "Operations Manager",
+      "content": "The cutting-edge technology and enhanced security provided by ITIA Solution Consulting have been a major asset for our company. Their team of experts exceeded our expectations at every stage of the project. Their transparency and effective collaboration were crucial to our success. Thanks to the entire team!"
+    }
   }
 }

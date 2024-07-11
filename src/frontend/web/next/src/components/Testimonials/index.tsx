@@ -1,44 +1,45 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import {useTranslations} from 'next-intl'
 
-const testimonialData: Testimonial[] = [
+const getTestimonialData = (t :(key: string) => string) :Testimonial[] =>[
   {
     id: 1,
     name: "Sarah Dupont",
-    designation: "Directrice Marketing",
-    content:
-      "ITIA Solution Consulting a complètement transformé notre infrastructure IT. Leur équipe d'experts a été incroyablement professionnelle et a su répondre à nos besoins spécifiques avec des solutions innovantes. Grâce à eux, nous avons pu augmenter notre efficacité et notre sécurité. Je les recommande vivement !.",
+    designation: (t('test1.designation')),
+    content:(t('test1.content')),
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
     name: "Jean-Michel Durand",
-    designation: "Chef de Projet",
-    content:
-      "Collaborer avec ITIA Solution Consulting a été un véritable plaisir. Leur flexibilité et adaptabilité nous ont permis de mener à bien des projets complexes sans aucun accroc. Leur approche personnalisée a vraiment fait la différence. Nous sommes très satisfaits de leur service continu et de leur support réactif.",
+    designation: (t('test2.designation')),
+    content:(t('test2.content')),
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
     name: "Alice Martin",
-    designation: "Responsable des Opérations",
-    content:
-      "La technologie de pointe et la sécurité renforcée offertes par ITIA Solution Consulting ont été un atout majeur pour notre entreprise. Leur équipe d'experts a dépassé nos attentes à chaque étape du projet. Leur transparence et leur collaboration efficace ont été déterminantes pour notre succès. Merci à toute l'équipe !",
+    designation: (t('test3.designation')),
+    content:(t('test3.content')),
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
 ];
 
 const Testimonials = () => {
+  const t = useTranslations('Testimonials')
+  const testimonialData = getTestimonialData(t)
+
   return (
     <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Nos utilisateurs témoignent"
-          paragraph="Nous sommes fiers de partager les avis de nos clients, qui témoignent de notre engagement envers la qualité et la satisfaction. Découvrez ce que nos utilisateurs ont à dire sur leur expérience avec nous."
+          title={t('title')}
+          paragraph={t('description')}
           center
         />
 

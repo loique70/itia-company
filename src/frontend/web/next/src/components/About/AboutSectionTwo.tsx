@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutSectionTwo = () => {
+  const t = useTranslations("AboutUs");
+  const h = useTranslations("Hero");
+
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -28,56 +32,52 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug Free Code
+                  {t("bugFreeCode.title")}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Nous nous engageons à fournir des solutions exemptes de bugs,
-                  garantissant ainsi une performance optimale et une fiabilité
-                  accrue de vos systèmes informatiques.
+                  {t("bugFreeCode.description")}
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier Support
+                  {t("premierSupport.title")}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Notre équipe de support est toujours prête à vous assister,
-                  assurant une réponse rapide et des solutions efficaces à tous
-                  vos problèmes informatiques.
+                  {t("premierSupport.description")}
                 </p>
               </div>
 
               <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <div className="text-center">
-                  <h2 className="text-4xl font-bold text-black dark:text-white">
-                    +12K
+                  <h2 className="text-4xl font-bold text-[#f97d7f] dark:text-white">
+                    100+
                   </h2>
                   <p className="mt-2 text-lg font-medium text-body-color">
-                    Membres Actifs
+                    {h("actifMember")}
                   </p>
                 </div>
                 <div className="text-center">
-                  <h2 className="text-4xl font-bold text-black dark:text-white">
-                    +1.5K
+                  <h2 className="text-4xl font-bold text-[#fbb132] dark:text-white">
+                    20+
                   </h2>
                   <p className="mt-2 text-lg font-medium text-body-color">
-                    Projets Totals
+                    {h("projectCompleted")}
                   </p>
                 </div>
                 <div className="text-center">
-                  <h2 className="text-4xl font-bold text-black dark:text-white">
-                    +14
+                  <h2 className="text-4xl font-bold text-[#8956b3] dark:text-white">
+                    10+
                   </h2>
                   <p className="mt-2 text-lg font-medium text-body-color">
-                    Récompenses Gagnées
+                    {h("awardsWinner")}
                   </p>
                 </div>
                 <div className="text-center">
-                  <h2 className="text-4xl font-bold text-black dark:text-white">
-                    +50
+                  <h2 className="text-4xl font-bold text-[#7dc370] dark:text-white">
+                    50+
                   </h2>
                   <p className="mt-2 text-lg font-medium text-body-color">
-                    Membres de l'Équipe
+                    {h("teamMember")}
                   </p>
                 </div>
               </div>

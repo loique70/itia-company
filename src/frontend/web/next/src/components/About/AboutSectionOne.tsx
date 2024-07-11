@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { useTranslations } from "next-intl";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -8,6 +9,8 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
+  const t = useTranslations("AboutUs");
+
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -44,8 +47,8 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2 ">
               <SectionTitle
-                title="Nous fournissons les meilleurs services de solutions informatiques."
-                paragraph="Chez ITIA Solution Consulting, nous transformons les idées en réalités grâce à des solutions IT innovantes et personnalisées. Fondée pour redéfinir le secteur, notre mission est de surpasser vos attentes avec des services de pointe adaptés à vos besoins spécifiques."
+                title={t("title")}
+                paragraph={t("description")}
                 mb="44px"
               />
 
@@ -55,15 +58,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Flexibilité et Adaptabilité " />
-                    <List text="Technologie de Pointe " />
-                    <List text="Équipe d'Experts " />
+                    <List text={t("flexibilityAdaptability.title")} />
+                    <List text={t("cuttingEdgeTechnology.title")}/>
+                    <List text={t("expertTeam.title")}/>
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Support Continu" />
-                    <List text="Approche Personnalisée" />
-                    <List text="Sécurité Renforcée" />
+                    <List text={t("continuousSupport.title")} />
+                    <List text={t("personalizedApproach.title")} />
+                    <List text={t("enhancedSecurity.title")} />
                   </div>
                   <div className="mt-8 w-full">
                     <img
